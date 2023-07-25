@@ -101,4 +101,14 @@ public class StudentController {
         return ResponseEntity.ok(studentService.getAverageAgeAllStudents());
     }
 
+    @GetMapping("/threads")
+    public void studentThreads() {
+        studentService.studentThreads();
+    }
+
+    @GetMapping("/sync-threads")
+    public void studentThreadsSync() {
+        studentService.studentThreadsSync();
+    }
+
 }
